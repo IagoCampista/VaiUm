@@ -33,6 +33,37 @@ describe('funcionalidade Conferir Vai Um', () => {
         //expectation
         expect (resultado).toBe(1);
     })
-    
+    test('número com mais de um digito com vai um', () => {
+        //setup
+        const calculadora = new Calculadora();
+        //action
+        const resultado = calculadora.confereVaiUm(555,555);
+        //expectation
+        expect (resultado).toBe(3);
+    })
+    test('número com mais de um digito com vai um', () => {
+        //setup
+        const calculadora = new Calculadora();
+        //action
+        const resultado = calculadora.confereVaiUm(123,456);
+        //expectation
+        expect (resultado).toBe(0);
+    })
+    test('número com mais de um digito com vai um', () => {
+        //setup
+        const calculadora = new Calculadora();
+        //action
+        const resultado = calculadora.confereVaiUm(555,594);
+        //expectation
+        expect (resultado).toBe(2);
+    })   
+    test('número com muitos digitos com vai um', () => {
+        //setup
+        const calculadora = new Calculadora();
+        //action
+        const resultado = calculadora.confereVaiUm(55555555,55555555);
+        //expectation
+        expect (resultado).toBe(8);
+    })  
 })
 

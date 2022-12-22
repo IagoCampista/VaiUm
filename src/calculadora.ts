@@ -27,11 +27,8 @@ class Calculadora {
         let result =0, aux=0;
 
         for (i=num1digitos.length-1; i>=0; i--){
-            console.log(num1digitos, num1digitos.length, num2digitos, num2digitos.length);
-            if(num1digitos[i]+num2digitos[i]+aux >= 10){
-                console.log("aux: "+aux);
-                console.log("soma: "+num1digitos[i]+num2digitos[i]+aux);
-                
+            
+            if(num1digitos[i]+num2digitos[i]+aux >= 10){                
                 result++;
                 aux = num1digitos[i]+num2digitos[i] - 10;
             }
