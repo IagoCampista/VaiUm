@@ -9,11 +9,7 @@ Entrada: 123 594 Retorno: 1 "vai um";
 Adaptado a partir do problema "Carry" do livro Programming Challenges - The Programming Contest Training 
 Manual_Steven S. Skiena, Miguel A. Revilla (Springer 2003)
 
-
-var num = 123456;
-var digits = num.toString().split('');
-var realDigits = digits.map(Number)
-console.log(realDigits);
+Link para o Repositório: https://github.com/IagoCampista/VaiUm
 */
 class Calculadora {
     confereVaiUm(num1:number, num2:number) {
