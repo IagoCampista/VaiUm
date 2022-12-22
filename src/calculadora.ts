@@ -11,7 +11,8 @@ Manual_Steven S. Skiena, Miguel A. Revilla (Springer 2003)
 */
 class Calculadora {
     confereVaiUm(num1:number, num2:number) {
-        return(0)
+        if(num1+num2>=10) return(1)
+        return (0)
     }
 } 
 export default Calculadora;
